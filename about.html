@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Lab 1 — Phạm Văn Huy Portfolio</title>
+    <title>Giới thiệu — Phạm Văn Huy Portfolio</title>
     <style>
         * {
             margin: 0;
@@ -59,65 +59,44 @@
         }
 
         .avatar {
-            width: 120px;
-            height: 120px;
+            width: 100px;
+            height: 100px;
             border-radius: 50%;
             margin-bottom: 16px;
             box-shadow: 0 8px 20px rgba(102, 126, 234, 0.35);
-            transition: transform 0.3s ease;
-        }
-
-        .avatar:hover {
-            transform: scale(1.05);
         }
 
         h1 {
             color: #667eea;
             margin-bottom: 8px;
-            font-size: 30px;
+            font-size: 28px;
         }
 
         h2 {
             color: #764ba2;
-            margin-bottom: 24px;
-            font-size: 17px;
+            margin-bottom: 20px;
+            font-size: 16px;
             font-weight: 500;
         }
 
-        .info {
+        .content {
             background: #f8f9fa;
             border-radius: 10px;
-            padding: 20px;
+            padding: 24px;
             margin: 20px 0;
             text-align: left;
             border-left: 4px solid #667eea;
+            line-height: 1.7;
         }
 
-        .info p {
-            margin: 10px 0;
-            font-size: 15px;
-        }
-
-        .badge {
-            display: inline-block;
-            background: #667eea;
-            color: white;
-            padding: 6px 14px;
-            border-radius: 20px;
-            font-size: 13px;
-            margin: 4px;
-            font-weight: 500;
+        .content p {
+            margin-bottom: 12px;
         }
 
         .footer {
             margin-top: 24px;
             font-size: 13px;
             color: #888;
-        }
-
-        .status {
-            color: #38a169;
-            font-weight: bold;
         }
     </style>
 </head>
@@ -126,44 +105,25 @@
     <div class="container">
         <!-- Navigation Menu -->
         <nav class="nav">
-            <a href="index.html" class="active">Trang chủ</a>
-            <a href="about.html">Giới thiệu</a>
+            <a href="index.html">Trang chủ</a>
+            <a href="about.html" class="active">Giới thiệu</a>
             <a href="contact.html">Liên hệ</a>
         </nav>
 
-        <!-- Avatar -->
         <img src="avatar.svg" alt="Avatar Phạm Văn Huy" class="avatar">
+        <h1>Về Tôi</h1>
+        <h2>Sinh viên Công nghệ Thông tin — Phạm Văn Huy</h2>
 
-        <!-- Tiêu đề -->
-        <h1>Xin chào, DevOps!</h1>
-        <h2>Lab 1 — Website của Phạm Văn Huy đã được cập nhật tự động! 🚀</h2>
-
-        <div class="info">
-            <p>👨‍💻 <strong>Sinh viên:</strong> Phạm Văn Huy</p>
-            <p>📚 <strong>Bài học:</strong> DevOps Lab 1 — Tổng quan</p>
-            <p>⚙️ <strong>Deploy bởi:</strong> GitHub Actions CI/CD</p>
-            <p>📅 <strong>Ngày deploy:</strong> <span id="date"></span></p>
-            <p>🟢 <strong>Pipeline status:</strong> <span class="status">Automated & Live</span></p>
-        </div>
-
-        <div>
-            <span class="badge">HTML5</span>
-            <span class="badge">CSS3</span>
-            <span class="badge">Git</span>
-            <span class="badge">GitHub Actions</span>
-            <span class="badge">CI/CD</span>
-            <span class="badge">DevOps</span>
+        <div class="content">
+            <p>👋 <strong>Xin chào!</strong> Tôi là <strong>Phạm Văn Huy</strong>.</p>
+            <p>🎯 Đây là dự án thực hành môn <strong>DevOps (Lab 1)</strong> nhằm trải nghiệm toàn bộ vòng đời phát triển phần mềm hiện đại: <em>Plan → Code → Build → Test → Deploy → Monitor</em>.</p>
+            <p>💡 Trong bài thực hành này, tôi đã tự động hóa quy trình triển khai ứng dụng web lên <strong>GitHub Pages</strong> sử dụng <strong>GitHub Actions CI/CD Pipeline</strong>.</p>
         </div>
 
         <div class="footer">
-            <p>Deployed automatically via GitHub Actions Pipeline</p>
-            <p>Push code → CI Build → Auto Deploy → Live! ✨</p>
+            <p>DevOps Lab 1 — End-to-End Automation</p>
         </div>
     </div>
-
-    <script>
-        document.getElementById('date').textContent = new Date().toLocaleDateString('vi-VN');
-    </script>
 </body>
 
 </html>
