@@ -162,8 +162,11 @@
             <a href="contact.html">Liên hệ</a>
         </nav>
 
-        <!-- Avatar -->
-        <img src="avatar.png" alt="Ảnh đại diện Phạm Văn Huy" class="avatar" width="130" height="130" fetchpriority="high">
+        <!-- Avatar (Next-gen WebP & Fast LCP) -->
+        <picture>
+            <source srcset="avatar.webp" type="image/webp">
+            <img src="avatar.png" alt="Ảnh đại diện Phạm Văn Huy" class="avatar" width="130" height="130" fetchpriority="high" decoding="async">
+        </picture>
 
         <!-- Tiêu đề -->
         <h1>Xin chào, DevOps!</h1>
