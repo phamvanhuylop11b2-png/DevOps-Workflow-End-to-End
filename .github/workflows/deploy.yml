@@ -25,19 +25,29 @@ jobs:
       - name: Checkout Code
         uses: actions/checkout@v4
 
-      # Step 2: Kiểm tra HTML cơ bản
-      - name: Validate HTML
+      # Step 2: Kiểm tra các file trang web
+      - name: Validate Files
         run: |
-          echo "Checking index.html exists..."
-          if [ -f "index.html" ]; then
-            echo "index.html found!"
-            echo "File size: $(wc -c < index.html) bytes"
-          else
-            echo "❌ index.html NOT found!"
-            exit 1
-          fi
+          echo "Checking essential website files..."
+          for file in index.html about.html contact.html; do
+            if [ -f "$file" ]; then
+              echo "✅ $file found! File size: $(wc -c < "$file") bytes"
+            else
+              echo "❌ $file NOT found!"
+              exit 1
+            fi
+          done
 
-      # Step 3: Deploy lên GitHub Pages
+      # Step 3: Run Lighthouse CI Audit (Bài tập mở rộng)
+      - name: Run Lighthouse CI Audit
+        uses: treosh/lighthouse-ci-action@v12
+        with:
+          urls: |
+            https://phamvanhuylop11b2-png.github.io/DevOps-Workflow-End-to-End/
+          uploadArtifacts: true
+          temporaryPublicStorage: true
+
+      # Step 4: Deploy lên GitHub Pages
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
