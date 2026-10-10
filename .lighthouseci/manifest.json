@@ -2,10 +2,10 @@
   {
     "url": "https://phamvanhuylop11b2-png.github.io/DevOps-Workflow-End-to-End/",
     "isRepresentativeRun": true,
-    "htmlPath": "/home/runner/work/DevOps-Workflow-End-to-End/DevOps-Workflow-End-to-End/.lighthouseci/phamvanhuylop11b2_png_github_io-DevOps_Workflow_End_to_End_-2026_10_10_15_23_17.report.html",
-    "jsonPath": "/home/runner/work/DevOps-Workflow-End-to-End/DevOps-Workflow-End-to-End/.lighthouseci/phamvanhuylop11b2_png_github_io-DevOps_Workflow_End_to_End_-2026_10_10_15_23_17.report.json",
+    "htmlPath": "/home/runner/work/DevOps-Workflow-End-to-End/DevOps-Workflow-End-to-End/.lighthouseci/phamvanhuylop11b2_png_github_io-DevOps_Workflow_End_to_End_-2026_10_10_15_32_12.report.html",
+    "jsonPath": "/home/runner/work/DevOps-Workflow-End-to-End/DevOps-Workflow-End-to-End/.lighthouseci/phamvanhuylop11b2_png_github_io-DevOps_Workflow_End_to_End_-2026_10_10_15_32_12.report.json",
     "summary": {
-      "performance": 0.99,
+      "performance": 0.96,
       "accessibility": 0.91,
       "best-practices": 0.96,
       "seo": 0.91
